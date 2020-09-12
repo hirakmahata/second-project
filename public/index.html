@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IPL visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>
+        IPL visualization
+    </title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <h1>IPL Dataset visualization</h1>
+
+    <div class="input-container">
+        <span class="label">Enter year: </span>
+        <input id="bowler_season" type="number" min="2008" max="2019" class="year-input" />
+        <button class="year-input-button" onclick="showEconomicBowler();">Submit</button>
+    </div>
+
+    <div id="top-Ten-Economic-Bowlers-Every-Year" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div id="matches-played-per-year" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div id="matches-Won-By-Each-Team" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div id="extra-Run-Conceded-By-Each-Team-In-2016" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div id="top-Ten-Economic-Bowlers-In-2015" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div id="centuries-Of-Batsmans-In-2019" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+    <script src="./app.js"></script>
+
+</body>
